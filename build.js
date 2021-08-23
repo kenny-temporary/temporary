@@ -86,7 +86,7 @@ function start(){
     generateEntry({ 
         filename: 'index.html',
         title: '企业训练导航页面',
-        entries: getDirectoryNameAndPath(['.git'])
+        entries: getDirectoryNameAndPath(['.git', 'node_modules'])
     });
 }
 

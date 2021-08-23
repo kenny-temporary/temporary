@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 Table</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    ☕️
+                    <img src="" alt="咖啡">
+                    <span>来杯咖啡吗？</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <coffee-menus></coffee-menus>
+                </td>
+                <td>with two columns</td>
+            </tr>
+        </tbody>
+        <tr>
+            <th colspan="2">版权所有©️极客大叔</th>
+        </tr>
+    </table>
+</body>
+
+<script type="text/javascript" src="./coffee.js"></script>
+<script type="text/javascript">
+    customElements.define('coffee-menus', Coffee);
+</script>
+</html>
