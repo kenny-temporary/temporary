@@ -1,0 +1,14 @@
+{
+  "name": "train",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kenny-temporary/train.git",
+  "author": "kenny <lishiwen@wclound.cn>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "dependencies": {
+    "http-server": "^13.0.1"
+  }
+}
