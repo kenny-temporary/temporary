@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <header>
+        <h2>Page Navigate Index</h2>
+    </header>
+    <main>
+        <ul>
+            <a href="./a.html"><li>Goto A Page</li></a>
+            <a href="./b.html"><li>Goto B Page</li></a>
+        </ul>
+    </main>
+
+
+    <!-- 使用javascript来动态插入 -->
+    <section class="dynamicContainerRoot"></section>
+    <button type="button" onClick="addPage()">使用javascript插入</button>
+</body>
+<script src="./main.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    const pages = [
+        { href: "/01/a.html", text: "Dynamic Mode Goto A Page" },
+        { href: "/01/b.html", text: "Dynamic Mode Goto B Page" },
+    ]
+    function addPage(){
+        appendListToContainer(pages, '.dynamicContainerRoot');
+    };
+</script>
+</html>
